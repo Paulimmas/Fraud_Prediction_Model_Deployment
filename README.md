@@ -5,7 +5,7 @@ It provides real-time fraud prediction using the trained Decision Tree model and
 
 ---
 
-## 🚀 What This API Does
+## What This API Does
 
 - Accepts **multiple transaction records**  
 - Loads your trained model, threshold, and selected features  
@@ -16,7 +16,7 @@ It provides real-time fraud prediction using the trained Decision Tree model and
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 fraud-prediction-deployment/
@@ -32,7 +32,7 @@ fraud-prediction-deployment/
 
 ---
 
-## 🔌 API Endpoint
+## API Endpoint
 
 ### **POST /predict**
 
@@ -66,7 +66,7 @@ Send multiple records:
 
 ---
 
-## ▶️ Run Locally
+## Run Locally
 
 Install dependencies:
 
@@ -88,7 +88,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## 🌐 Deployment (Render)
+# Deployment (Render)
 
 The `render.yaml` file enables:
 
@@ -104,7 +104,7 @@ https://your-service-name.onrender.com
 
 ---
 
-## 📘 Author
+## Author
 
 Deployment completed as part of the **DerpTech Upskilling Programme (3MTT Initiative)**.
 
