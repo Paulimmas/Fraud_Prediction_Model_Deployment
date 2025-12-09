@@ -112,6 +112,7 @@ import requests
 
 API_URL = "https://fraud-project.onrender.com/predict"
 
+# Sample batch of 5 transactions
 transactions = [
     { "is_high_amount": 0.0, "cust_total_transactions": 2048.0, "time_of_day": 0.0, "category": 10.0, "cust_total_fraud": 8.0, "cust_fraud_rate": 0.00390625 },
     { "is_high_amount": 1.0, "cust_total_transactions": 2048.0, "time_of_day": 3.0, "category": 10.0, "cust_total_fraud": 8.0, "cust_fraud_rate": 0.00390625 },
@@ -122,11 +123,12 @@ transactions = [
 
 payload = {"items": transactions}
 
-# Make POST request
+# Send POST request to the API
 response = requests.post(API_URL, json=payload)
 
-# Check if request was successful
+# Display result
 if response.status_code == 200:
+    print("✅ API Response:")
     print(response.json())
 else:
-    print(f"Error {response.status_code}: {response.text}")
+    print(f"❌ Error {response.status_code}: {response.text}")
