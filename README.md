@@ -125,6 +125,22 @@ This method is useful if you prefer to test your API **directly inside the FastA
 
 This method is simple, but some users may still find JSON formatting tricky — especially beginners — which is why the automatic approach below is recommended.
 
+=== JSON Payload for Single Fraud Prediction ===
+```json
+{
+    "items": [
+        {
+            "is_high_amount": 1.0,
+            "cust_total_transactions": 485.0,
+            "time_of_day": 3.0,
+            "category": 4.0,
+            "cust_total_fraud": 4.0,
+            "cust_fraud_rate": 0.008247422680412371
+        }
+    ]
+}
+```
+
 ---
 
 ### **2️⃣ Automatic Method (Recommended for Beginners)**
