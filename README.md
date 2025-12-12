@@ -101,3 +101,64 @@ Your live API will be available at:
 ```
 https://your-service-name.onrender.com
 ```
+Here is a corrected and improved version based on your clarification:
+
+---
+
+## 🚀 How to Run the Fraud Prediction Test Code (Automatic Method Recommended)
+
+There are **two ways** to test the API:
+
+---
+
+### **1️Manual Method (JSON Copy-and-Paste Method)**
+
+This method is useful if you prefer to test your API **directly inside the FastAPI Swagger UI**.
+
+* I have already generated the **correct JSON payloads** (single and bulk).
+* The user simply needs to **copy the JSON** exactly as provided.
+* Then paste it inside the **“items” field** on the FastAPI interface at:
+
+ [https://fraud-project.onrender.com/docs](https://fraud-project.onrender.com/docs)
+
+* After pasting, click **“Execute”** to run the prediction.
+
+This method is simple, but some users may still find JSON formatting tricky — especially beginners — which is why the automatic approach below is recommended.
+
+---
+
+### **2️⃣ Automatic Method (Recommended for Beginners)**
+
+This approach uses a Python script to **send the JSON automatically** to the API — no manual formatting required.
+This is the easiest and cleanest method.
+
+---
+
+## How to Run the Automatic Method in Google Colab
+
+You can test the API using the code snippet directly in **Google Colab**, with **no setup and no installations** required.
+
+### Follow these quick steps:
+
+1. Open Google Colab:
+   [https://colab.research.google.com/](https://colab.research.google.com/)
+
+2. Click **New Notebook**.
+
+3. Copy and paste the entire code block into a new code cell.
+
+4. Run the cell by pressing **Shift + Enter** or clicking the **Run ▶️** button.
+
+5. Colab will send the request automatically and print the API’s fraud prediction response.
+
+###  Nothing to install
+
+Google Colab already includes **requests** and **json**, so the script runs instantly.
+
+---
+
+If you want, I can add a screenshot-style guide or a visual workflow to make it even easier for beginners.
+
+
+
+
