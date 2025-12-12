@@ -151,13 +151,19 @@ You can test the API using the code snippet directly in **Google Colab**, with *
 
 5. Colab will send the request automatically and print the API’s fraud prediction response.
 
-###  Nothing to install
-
-Google Colab already includes **requests** and **json**, so the script runs instantly.
-
----
-
-If you want, I can add a screenshot-style guide or a visual workflow to make it even easier for beginners.
+=== JSON Payload for Single Fraud Prediction ===
+{
+    "items": [
+        {
+            "is_high_amount": 1.0,
+            "cust_total_transactions": 485.0,
+            "time_of_day": 3.0,
+            "category": 4.0,
+            "cust_total_fraud": 4.0,
+            "cust_fraud_rate": 0.008247422680412371
+        }
+    ]
+}
 
 
 
