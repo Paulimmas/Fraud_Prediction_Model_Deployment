@@ -141,7 +141,7 @@ This method is simple, but some users may still find JSON formatting tricky — 
 }
 ```
 
-###=== JSON Payload for Bulk Fraud Prediction ===
+### **=== JSON Payload for Bulk Fraud Prediction ===
 
 ```json
 {
