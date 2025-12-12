@@ -151,7 +151,9 @@ You can test the API using the code snippet directly in **Google Colab**, with *
 
 5. Colab will send the request automatically and print the API’s fraud prediction response.
 
+
 === JSON Payload for Single Fraud Prediction ===
+---
 {
     "items": [
         {
@@ -164,7 +166,6 @@ You can test the API using the code snippet directly in **Google Colab**, with *
         }
     ]
 }
-
-
+---
 
 
