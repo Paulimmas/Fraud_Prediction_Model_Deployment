@@ -141,6 +141,55 @@ This method is simple, but some users may still find JSON formatting tricky — 
 }
 ```
 
+###=== JSON Payload for Bulk Fraud Prediction ===
+
+```json
+{
+    "items": [
+        {
+            "is_high_amount": 1,
+            "cust_total_transactions": 1525,
+            "time_of_day": 0,
+            "category": 4,
+            "cust_total_fraud": 11,
+            "cust_fraud_rate": 0.007213114754098361
+        },
+        {
+            "is_high_amount": 1,
+            "cust_total_transactions": 485,
+            "time_of_day": 3,
+            "category": 4,
+            "cust_total_fraud": 4,
+            "cust_fraud_rate": 0.008247422680412371
+        },
+        {
+            "is_high_amount": 1,
+            "cust_total_transactions": 1033,
+            "time_of_day": 3,
+            "category": 11,
+            "cust_total_fraud": 8,
+            "cust_fraud_rate": 0.007744433688286544
+        },
+        {
+            "is_high_amount": 1,
+            "cust_total_transactions": 1036,
+            "time_of_day": 3,
+            "category": 4,
+            "cust_total_fraud": 7,
+            "cust_fraud_rate": 0.006756756756756757
+        },
+        {
+            "is_high_amount": 1,
+            "cust_total_transactions": 2611,
+            "time_of_day": 3,
+            "category": 4,
+            "cust_total_fraud": 12,
+            "cust_fraud_rate": 0.004595940252776714
+        }
+    ]
+}
+```
+
 ---
 
 ### **2️⃣ Automatic Method (Recommended for Beginners)**
