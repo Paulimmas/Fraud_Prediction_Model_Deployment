@@ -216,7 +216,7 @@ You can test the API using the code snippet directly in **Google Colab**, with *
 
 5. Colab will send the request automatically and print the API’s fraud prediction response.
 
-### Single Fraud Transaction — API Prediction Test**
+### Single Fraud Transaction — API Prediction Test
 
 ```python
 import requests
@@ -252,5 +252,72 @@ except:
 
 ```
 
+###Bulk Fraud Transactions — Testing Batch Predictions via API
+```python
+import requests
+import json
+
+# API URL
+url = "https://fraud-project.onrender.com/predict"
+
+# Bulk fraud JSON payload (5 records)
+bulk_payload = {
+    "items": [
+        {
+            "is_high_amount": 1,
+            "cust_total_transactions": 1525,
+            "time_of_day": 0,
+            "category": 4,
+            "cust_total_fraud": 11,
+            "cust_fraud_rate": 0.007213114754098361
+        },
+        {
+            "is_high_amount": 1,
+            "cust_total_transactions": 485,
+            "time_of_day": 3,
+            "category": 4,
+            "cust_total_fraud": 4,
+            "cust_fraud_rate": 0.008247422680412371
+        },
+        {
+            "is_high_amount": 1,
+            "cust_total_transactions": 1033,
+            "time_of_day": 3,
+            "category": 11,
+            "cust_total_fraud": 8,
+            "cust_fraud_rate": 0.007744433688286544
+        },
+        {
+            "is_high_amount": 1,
+            "cust_total_transactions": 1036,
+            "time_of_day": 3,
+            "category": 4,
+            "cust_total_fraud": 7,
+            "cust_fraud_rate": 0.006756756756756757
+        },
+        {
+            "is_high_amount": 1,
+            "cust_total_transactions": 2611,
+            "time_of_day": 3,
+            "category": 4,
+            "cust_total_fraud": 12,
+            "cust_fraud_rate": 0.004595940252776714
+        }
+    ]
+}
+
+# Send request
+response = requests.post(url, json=bulk_payload)
+
+# Print output nicely
+print("=== Bulk (5 Transactions) Prediction ===")
+try:
+    print(json.dumps(response.json(), indent=4))
+except:
+    print("Error decoding API response")
+    print(response.text)
+
+
+```
 
 
