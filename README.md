@@ -141,7 +141,7 @@ This method is simple, but some users may still find JSON formatting tricky — 
 }
 ```
 
-### **=== JSON Payload for Bulk Fraud Prediction ===
+### === JSON Payload for Bulk Fraud Prediction ===
 
 ```json
 {
@@ -216,8 +216,16 @@ You can test the API using the code snippet directly in **Google Colab**, with *
 
 5. Colab will send the request automatically and print the API’s fraud prediction response.
 
-```json
-{
+###**Single Fraud Transaction — API Prediction Test**
+
+import requests
+import json
+
+# API URL
+url = "https://fraud-project.onrender.com/predict"
+
+# Single fraud JSON payload
+single_payload = {
     "items": [
         {
             "is_high_amount": 1.0,
@@ -229,6 +237,17 @@ You can test the API using the code snippet directly in **Google Colab**, with *
         }
     ]
 }
-```
+
+# Send request
+response = requests.post(url, json=single_payload)
+
+# Print output nicely
+print("=== Single Transaction Prediction ===")
+try:
+    print(json.dumps(response.json(), indent=4))
+except:
+    print("Error decoding API response")
+    print(response.text)
+
 
 
