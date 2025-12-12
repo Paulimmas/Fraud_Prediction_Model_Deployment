@@ -216,8 +216,9 @@ You can test the API using the code snippet directly in **Google Colab**, with *
 
 5. Colab will send the request automatically and print the API’s fraud prediction response.
 
-###**Single Fraud Transaction — API Prediction Test**
+### Single Fraud Transaction — API Prediction Test**
 
+```python
 import requests
 import json
 
@@ -227,7 +228,7 @@ url = "https://fraud-project.onrender.com/predict"
 # Single fraud JSON payload
 single_payload = {
     "items": [
-        {
+         {
             "is_high_amount": 1.0,
             "cust_total_transactions": 485.0,
             "time_of_day": 3.0,
@@ -248,6 +249,8 @@ try:
 except:
     print("Error decoding API response")
     print(response.text)
+
+```
 
 
 
