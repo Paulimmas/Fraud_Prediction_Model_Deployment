@@ -105,7 +105,7 @@ Here is a corrected and improved version based on your clarification:
 
 ---
 
-## 🚀 How to Run the Fraud Prediction Test Code (Automatic Method Recommended)
+## How to Run the Fraud Prediction Test Code (Automatic Method Recommended)
 
 There are **two ways** to test the API:
 
