@@ -251,7 +251,7 @@ except:
 
 ```
 
-###Bulk Fraud Transactions — Testing Batch Predictions via API
+### Bulk Fraud Transactions — Testing Batch Predictions via API
 ```python
 import requests
 import json
