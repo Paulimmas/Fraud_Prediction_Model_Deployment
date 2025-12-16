@@ -101,7 +101,6 @@ Your live API will be available at:
 ```
 https://your-service-name.onrender.com
 ```
-Here is a corrected and improved version based on your clarification:
 
 ---
 
