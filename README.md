@@ -43,10 +43,12 @@ It is encoded into four discrete values based on hour ranges:
 
 Value	Time Range	Description
 
-3	21:00 – 04:59	Late Night / Early Morning
-2	05:00 – 11:59	Morning
-0	12:00 – 16:59	Afternoon
-1	17:00 – 20:59	Evening
+| Value | Time Range        | Description              |
+|-------|-------------------|--------------------------|
+| 3     | 21:00 – 04:59     | Late Night / Early Morning |
+| 2     | 05:00 – 11:59     | Morning                  |
+| 0     | 12:00 – 16:59     | Afternoon                |
+| 1     | 17:00 – 20:59     | Evening                  |
 
 
 Example:
