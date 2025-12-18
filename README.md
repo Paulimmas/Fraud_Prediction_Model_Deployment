@@ -32,11 +32,25 @@ fraud-prediction-deployment/
 
 ---
 
-## API Endpoint
+Feature Encoding & Interpretation
 
-### **POST /predict**
+This project uses numerical encodings for categorical and time-based features to enable efficient model training and inference. The official mappings used are documented below to ensure correct interpretation and reproducibility.
 
-Send multiple records:
+Time of Day (time_of_day)
+
+The time_of_day feature represents the period of the day when a transaction occurred.
+It is encoded into four discrete values based on hour ranges:
+
+Value	Time Range	Description
+
+3	21:00 – 04:59	Late Night / Early Morning
+2	05:00 – 11:59	Morning
+0	12:00 – 16:59	Afternoon
+1	17:00 – 20:59	Evening
+
+
+Example:
+A transaction occurring at 22:30
 
 ```json
 {
