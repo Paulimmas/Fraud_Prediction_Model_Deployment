@@ -52,33 +52,33 @@ Value	Time Range	Description
 
 
 Example:
-A transaction occurring at 22:30
+A transaction occurring at 22:30 (10:30 PM) is encoded as time_of_day = 3.
 
-```json
-{
-  "items": [
-    {
-      "feature1": 32.5,
-      "feature2": 0.12,
-      "feature3": 1
-    }
-  ]
-}
-```
+Transaction Category (category)
 
-### **Example Response**
+Transaction categories are label-encoded into numerical values for modeling.
+The mapping below was used consistently during training, evaluation, and deployment.
 
-```json
-{
-  "predictions": [
-    {
-      "fraud_probability": 0.87,
-      "final_prediction": "Fraud",
-      "threshold_used": 0.42
-    }
-  ]
-}
-```
+Value	Category
+
+| Value | Category          |
+|-------|-------------------|
+| 0     | entertainment     |
+| 1     | food_dining       |
+| 2     | gas_transport     |
+| 3     | grocery_net       |
+| 4     | grocery_pos       |
+| 5     | health_fitness    |
+| 6     | home              |
+| 7     | kids_pets         |
+| 8     | misc_net          |
+| 9     | misc_pos          |
+| 10    | personal_care     |
+| 11    | shopping_net      |
+| 12    | shopping_pos      |
+| 13    | travel            |
+
+
 
 ---
 
