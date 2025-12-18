@@ -32,16 +32,16 @@ fraud-prediction-deployment/
 
 ---
 
-Feature Encoding & Interpretation
+## Feature Encoding & Interpretation 
 
 This project uses numerical encodings for categorical and time-based features to enable efficient model training and inference. The official mappings used are documented below to ensure correct interpretation and reproducibility.
 
-Time of Day (time_of_day)
+## Time of Day (time_of_day)
 
 The time_of_day feature represents the period of the day when a transaction occurred.
 It is encoded into four discrete values based on hour ranges:
 
-Value	Time Range	Description
+## Value	Time Range	Description
 
 | Value | Time Range        | Description              |
 |-------|-------------------|--------------------------|
@@ -54,12 +54,12 @@ Value	Time Range	Description
 Example:
 A transaction occurring at 22:30 (10:30 PM) is encoded as time_of_day = 3.
 
-Transaction Category (category)
+## Transaction Category (category)
 
 Transaction categories are label-encoded into numerical values for modeling.
 The mapping below was used consistently during training, evaluation, and deployment.
 
-Value	Category
+## Value	Category
 
 | Value | Category          |
 |-------|-------------------|
